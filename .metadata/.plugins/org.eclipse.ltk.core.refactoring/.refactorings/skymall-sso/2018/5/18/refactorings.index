@@ -1,0 +1,7 @@
+1525184484255	Rename package 'com.skymall.rest.dao'
+1525184575038	Rename package 'com.skymall.rest.dao.imp'
+1525184925094	Delete element
+1525185086108	Move file
+1525349127000	Extract local variable 'selectByExample'
+1525349393447	Delete element
+1525524453779	Extract local variable 'randomUUID'

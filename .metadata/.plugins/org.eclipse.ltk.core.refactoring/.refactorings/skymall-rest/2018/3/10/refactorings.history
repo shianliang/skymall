@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;categoryResult&apos; from expression &apos;itemCatService.categoryResult()&apos;&#x0D;&#x0A;- Original project: &apos;skymall-rest&apos;&#x0D;&#x0A;- Variable name: &apos;categoryResult&apos;&#x0D;&#x0A;- Destination method: &apos;com.skymall.rest.controller.ItemCatController.getItemCatList()&apos;&#x0D;&#x0A;- Variable expression: &apos;itemCatService.categoryResult()&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;categoryResult&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java&lt;com.skymall.rest.controller{ItemCatController.java" name="categoryResult" replace="true" selection="508 0" stamp="1520138684593" version="1.0"/>
+</session>

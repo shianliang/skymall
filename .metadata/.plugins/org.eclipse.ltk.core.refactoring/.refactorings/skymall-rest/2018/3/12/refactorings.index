@@ -1,0 +1,5 @@
+1521621514051	Extract local variable 'resource'
+1521624314438	Extract local variable 'del'
+1521683462666	Copy file
+1521697980249	Rename type 'JedisClientDao'
+1521771569983	Rename compilation unit 'ContentSyncService.java'

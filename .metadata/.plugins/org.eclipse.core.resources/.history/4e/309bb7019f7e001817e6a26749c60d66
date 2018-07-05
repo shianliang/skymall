@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context" 
+	xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/rabbit 
+	http://www.springframework.org/schema/rabbit/spring-rabbit-1.4.xsd">
+
+	
+	<!-- 定义RabbitMQ的连接工厂 -->
+	<rabbit:connection-factory id="connectionFactory"
+		host="${rabbitmq.host}" port="${rabbitmq.port}" username="${rabbitmq.username}" password="${rabbitmq.password}"
+		virtual-host="${rabbitmq.vhost}" />
+		
+	<!-- MQ的管理，包括队列、交换器等 -->
+	<rabbit:admin connection-factory="connectionFactory" />
+	
+	<!-- 定义队列 -->
+    <rabbit:queue name="TAOTAO-PORTAL-ITEM-QUEUE" auto-declare="true" durable="false" />
+    
+   <!-- 实例消费者 -->
+    <bean id="itemMqHandler" class="com.skymall.portal.mq.handler.ItemMqHandler" ></bean>
+   
+   <!-- 定义消费者监听队列 -->
+   <rabbit:listener-container connection-factory="connectionFactory">
+   		<rabbit:listener ref="itemMqHandler" method="execute" queue-names="TAOTAO-PORTAL-ITEM-QUEUE"/>
+   </rabbit:listener-container> 
+	
+	
+</beans>

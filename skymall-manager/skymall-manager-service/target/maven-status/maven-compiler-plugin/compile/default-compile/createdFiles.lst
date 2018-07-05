@@ -1,0 +1,12 @@
+com\skymall\service\imp\ContentServiceImp.class
+com\skymall\service\imp\ItemCatServiceImp.class
+com\skymall\service\ItemCatService.class
+com\skymall\service\ItemParamService.class
+com\skymall\service\imp\ItemServiceImp.class
+com\skymall\service\ItemService.class
+com\skymall\service\ContentCategoryService.class
+com\skymall\service\PictrueService.class
+com\skymall\service\imp\ItemParamServiceImp.class
+com\skymall\service\imp\PictrueServiceImp.class
+com\skymall\service\ContentService.class
+com\skymall\service\imp\ContentCategoryServiceimp.class

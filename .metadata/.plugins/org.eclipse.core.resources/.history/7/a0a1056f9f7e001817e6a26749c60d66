@@ -1,0 +1,18 @@
+/**  
+ * <p>Title: ItemMqHandler.java</p>  
+ * <p>Description: </p>   
+ * @author shianliang  
+ * @date 2018年7月3日  
+ * @version 1.0  
+ */ 
+package com.skymall.rest.mq.handler;
+
+/**  
+ * <p>Title: ItemMqHandler</p>  
+ * <p>Description: </p>  
+ * @author shianliang 
+ * @date 2018年7月3日  
+ */
+public class ItemMqHandler {
+
+}

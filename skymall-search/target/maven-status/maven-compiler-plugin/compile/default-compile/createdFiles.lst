@@ -1,0 +1,12 @@
+com\skymall\search\pojo\SearchResult.class
+com\skymall\search\service\imp\ItemServiceImp.class
+com\skymall\search\controller\SearchContrller.class
+com\skymall\search\service\SearchService.class
+com\skymall\search\service\imp\SearchServiceImp.class
+com\skymall\search\mq\handler\ItemMqHandler.class
+com\skymall\search\service\ItemService.class
+com\skymall\search\pojo\Item.class
+com\skymall\search\dao\SearchDao.class
+com\skymall\search\controller\ItemController.class
+com\skymall\search\mapper\ItemDao.class
+com\skymall\search\dao\imp\SearchDaoImp.class

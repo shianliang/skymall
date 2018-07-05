@@ -1,0 +1,7 @@
+com\skymall\order\dao\JedisClient.class
+com\skymall\order\service\OrderService.class
+com\skymall\order\dao\imp\JedisClientCluster.class
+com\skymall\order\controller\OrderController.class
+com\skymall\order\dao\imp\JedisClientSingle.class
+com\skymall\order\service\imp\OrderServiceImp.class
+com\skymall\order\pojo\Order.class

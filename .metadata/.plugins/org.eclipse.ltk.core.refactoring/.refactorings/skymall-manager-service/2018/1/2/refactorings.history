@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;randomUUID&apos; from expression &apos;UUID.randomUUID()&apos;&#x0D;&#x0A;- Original project: &apos;skymall-manager-service&apos;&#x0D;&#x0A;- Variable name: &apos;randomUUID&apos;&#x0D;&#x0A;- Destination method: &apos;com.skymall.service.imp.PictrueServiceImp.uploadPictrue()&apos;&#x0D;&#x0A;- Variable expression: &apos;UUID.randomUUID()&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;randomUUID&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java&lt;com.skymall.service.imp{PictrueServiceImp.java" name="randomUUID" replace="true" selection="548 0" stamp="1515845795041" version="1.0"/>
+</session>

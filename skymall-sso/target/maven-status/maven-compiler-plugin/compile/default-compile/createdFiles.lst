@@ -1,0 +1,7 @@
+com\skymall\sso\controller\UserController.class
+com\skymall\sso\controller\PageController.class
+com\skymall\sso\service\UserService.class
+com\skymall\sso\dao\imp\JedisClientSingle.class
+com\skymall\sso\dao\imp\JedisClientCluster.class
+com\skymall\sso\dao\JedisClient.class
+com\skymall\sso\service\impl\UserServiceImpl.class

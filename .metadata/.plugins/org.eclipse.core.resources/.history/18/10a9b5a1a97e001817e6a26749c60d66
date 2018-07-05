@@ -1,0 +1,72 @@
+/**  
+ * <p>Title: ItemMqHandler.java</p>  
+ * <p>Description: </p>   
+ * @author shianliang  
+ * @date 2018年7月3日  
+ * @version 1.0  
+ */ 
+package com.skymall.search.mq.handler;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.apache.solr.client.solrj.SolrServer;
+import org.apache.solr.client.solrj.SolrServerException;
+import org.apache.solr.client.solrj.response.UpdateResponse;
+import org.apache.solr.common.SolrInputDocument;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.skymall.common.utils.JsonUtils;
+import com.skymall.search.pojo.Item;
+import com.skymall.search.service.ItemService;
+
+/**  
+ * 消费者
+ * <p>Title: ItemMqHandler</p>  
+ * <p>Description: </p>  
+ * @author shianliang 
+ * @date 2018年7月3日  
+ */
+public class ItemMqHandler {
+
+	@Autowired
+	private ItemService itemService;
+	
+	@Autowired
+	private SolrServer solrServer;
+	
+	public void execute(String msg){
+		
+		Map<String,Object> map=JsonUtils.jsonToPojo(msg,Map.class);
+		
+		try {
+			String type=(String)map.get("type");
+			Long itemId=(Long)map.get("itemId");
+
+			if("insert".equals(type)||"update".equals(type)){
+				Item item=itemService.getItemByItemId(itemId);
+//				操作solr
+				SolrInputDocument document=new SolrInputDocument();
+				document.addField("id", item.getId());
+				document.addField("item_title", item.getTitle());
+				document.addField("item_sell_point",item.getSell_point());
+				document.addField("item_price", item.getPrice());
+				document.addField("item_image", item.getImage());
+				document.addField("item_category_name", item.getCeagory_name());
+				document.addField("item_desc", item.getItem_des());	
+				solrServer.add(document);
+				solrServer.commit();
+			}else if("delete".equals(type)){
+				solrServer.deleteById(itemId+"");
+			}
+		} catch (Exception  e) {
+			
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+	
+}

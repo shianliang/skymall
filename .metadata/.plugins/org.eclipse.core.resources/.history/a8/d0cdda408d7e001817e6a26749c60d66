@@ -1,0 +1,62 @@
+/**  
+ * <p>Title: ItemMqHandler.java</p>  
+ * <p>Description: </p>   
+ * @author shianliang  
+ * @date 2018年7月3日  
+ * @version 1.0  
+ */ 
+package com.skymall.search.mq.handler;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.apache.solr.client.solrj.SolrServer;
+import org.apache.solr.client.solrj.SolrServerException;
+import org.apache.solr.client.solrj.response.UpdateResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.skymall.common.utils.JsonUtils;
+import com.skymall.search.pojo.Item;
+import com.skymall.search.service.ItemService;
+
+/**  
+ * <p>Title: ItemMqHandler</p>  
+ * <p>Description: </p>  
+ * @author shianliang 
+ * @date 2018年7月3日  
+ */
+public class ItemMqHandler {
+
+	@Autowired
+	private ItemService itemService;
+	
+	@Autowired
+	private SolrServer solrServer;
+	
+	public void execute(String msg){
+		
+		Map<String,String> map=JsonUtils.jsonToPojo(msg,Map.class);
+		
+		try {
+			String type=map.get("type");
+			String str=map.get("itemId");
+			long itemId=Long.parseLong(str);
+
+			if("insert".equals(type)||"update".equals(type)){
+				Item item=itemService.getItemByItemId(itemId);
+				UpdateResponse addBean = solrServer.addBean(item);
+				solrServer.commit();
+			}else if("delete".equals(type)){
+				solrServer.deleteById(itemId+"");
+			}
+		} catch (Exception  e) {
+			
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+	
+}

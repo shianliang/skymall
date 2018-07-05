@@ -1,0 +1,10 @@
+1522546434473	Extract local variable 'query2'
+1522567177028	Extract local variable 'highlighting'
+1522569196448	Rename type 'SolrServiceImp'
+1523077780865	Copy file
+1523079196230	Delete element
+1523079200479	Delete element
+1523079348656	Rename package 'com.skymall.search.dao'
+1523079435529	Delete element
+1523088799232	Copy package
+1523089051941	Copy compilation units

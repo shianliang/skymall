@@ -1,0 +1,6 @@
+#solr服务器地址
+#单机版服务器被占用了
+#SOLR_SERVER_BASE_URL=http://192.168.203.18:8080/solr  
+
+
+

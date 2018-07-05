@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;createCriteria&apos; from expression &apos;itemParamQuery.createCriteria()&apos;&#x0D;&#x0A;- Original project: &apos;skymall-manager-service&apos;&#x0D;&#x0A;- Variable name: &apos;createCriteria&apos;&#x0D;&#x0A;- Destination method: &apos;com.skymall.service.imp.ItemParamServiceImp.getItemParamByCatId()&apos;&#x0D;&#x0A;- Variable expression: &apos;itemParamQuery.createCriteria()&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;createCriteria&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java&lt;com.skymall.service.imp{ItemParamServiceImp.java" name="createCriteria" replace="true" selection="557 0" stamp="1516197332380" version="1.0"/>
+</session>

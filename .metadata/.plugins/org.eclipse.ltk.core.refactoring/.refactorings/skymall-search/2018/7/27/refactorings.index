@@ -1,0 +1,4 @@
+1530587017813	Rename package 'com.skymall.search.mq.handler.ItemMqHandler'
+1530597464128	Extract local variable 'addBean'
+1530600549062	Extract local variable 'string'
+1530607344888	Copy file

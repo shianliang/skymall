@@ -1,0 +1,5 @@
+1520577686003	Extract local variable 'createCriteria'
+1520577985122	Extract local variable 'createCriteria'
+1520580905067	Rename type 'ContentCategoryimp'
+1520582540495	Extract local variable 'createCriteria'
+1520582607016	Extract local variable 'selectByExample'

@@ -1,0 +1,24 @@
+#FTP 服务器 配置
+#FTP ip
+FTP_ADDRESS=192.168.203.10
+#FTP 端口
+FTP_PORT=21
+#FTP 登陆用户名
+FTP_USERNAME=ftpuser
+#FTP 登录密码
+FTP_PASSWORD=shi1988
+# 图片上传保存ftp路径
+FTP_BASE_PATH=/home/ftpuser/www/images
+#图片基础路径
+IMAGE_BASE_URL=http://192.168.203.10/images
+
+#缓存同步服务请求url（内容）
+REST_BASE_URL=http://localhost:8081/rest
+REST_CONTENT_SYNC_URL=/cache/sync/content/
+
+#rabbitmq(消息)配置
+rabbitmq.host=127.0.0.1
+rabbitmq.port=5672
+rabbitmq.username=taotao
+rabbitmq.password=123
+rabbitmq.vhost=/taotao

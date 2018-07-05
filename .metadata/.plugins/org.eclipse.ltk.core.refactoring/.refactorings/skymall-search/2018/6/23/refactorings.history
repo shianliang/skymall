@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.search.test.SolrTest&apos; to &apos;SolrCloudTest&apos;&#x0D;&#x0A;- Original project: &apos;skymall-search&apos;&#x0D;&#x0A;- Original element: &apos;com.search.test.SolrTest&apos;&#x0D;&#x0A;- Renamed element: &apos;com.search.test.SolrCloudTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SolrTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java&lt;com.search.test{SolrTest.java[SolrTest" matchStrategy="1" name="SolrCloudTest" qualified="false" references="true" similarDeclarations="false" stamp="1528161942662" textual="false" version="1.0"/>
+</session>

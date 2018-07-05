@@ -1,0 +1,9 @@
+1522030058451	Delete element
+1522030098923	Delete element
+1522032960600	Rename package 'com.skymall.search.dao'
+1522032975572	Rename package 'com.skymall.search.apper'
+1522032997154	Rename type 'ItemDao'
+1522036727386	Copy file
+1522043113541	Rename package 'com.skymall.search.mapper'
+1522043130554	Rename type 'ItemMapper'
+1522043142562	Rename resource 'ItemMapper.xml'

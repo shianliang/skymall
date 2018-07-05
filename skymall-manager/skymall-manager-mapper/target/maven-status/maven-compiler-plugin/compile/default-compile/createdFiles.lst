@@ -1,0 +1,11 @@
+com\skymall\dao\TbContentCategoryDao.class
+com\skymall\dao\TbItemDescDao.class
+com\skymall\dao\TbOrderShippingDao.class
+com\skymall\dao\TbContentDao.class
+com\skymall\dao\TbItemCatDao.class
+com\skymall\dao\TbOrderItemDao.class
+com\skymall\dao\TbOrderDao.class
+com\skymall\dao\TbItemParamItemDao.class
+com\skymall\dao\TbUserDao.class
+com\skymall\dao\TbItemDao.class
+com\skymall\dao\TbItemParamDao.class
